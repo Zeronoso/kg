@@ -5,10 +5,23 @@ Answer the following questions and provide the SQL queries used to find the answ
 
 
 SQL Queries:
+```sql
+WITH revenue_by_city AS (
+	SELECT city, SUM(totaltransactionrevenue) AS total_revenue
+	FROM all_sessions
+	GROUP BY city
+	HAVING SUM(totaltransactionrevenue) > 0
+)
+
+SELECT city, total_revenue,
+	RANK() OVER (ORDER BY total_revenue DESC) AS revenue_rank
+FROM revenue_by_city
+WHERE city IS NOT NULL
+ORDER BY revenue_rank
+```
 
 
 
-Answer:
 
 
 
