@@ -1,7 +1,7 @@
 # Final-Project-Transforming-and-Analyzing-Data-with-SQL
 
 ## Project/Goals
-Create a database with pgadmin for a ee-commerce business with the provided data, and give insightful analytics based on said data provided.
+Create a database with pgadmin for a e-commerce business with the provided data, and give insightful analytics based on said data provided.
 
 ## Process
 - Import the 5 excel cvs files provided into a new Postgres database.
