@@ -20,4 +20,5 @@ With these 4 tables, we can perform a number of analysis's for the business in o
 - I did accidently set all countries to null when trying to clean, so I had to delete the database and reimport from the excel file. This highlighted the importance of creating temporary tables / backups.
 
 ## Future Goals
-I would like to be able to normalize the data, but I have little practice in doing so and would need more experience in order to normalize more effectively.
+I would like to be able to normalize the data, but I have little practice in doing so and would need more experience and practice in order to normalize more effectively.
+create visualizations for some of the data/queries. ie yearly/monthly revenue, revenue by country/city, so on and so forth.
