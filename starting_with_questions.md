@@ -52,12 +52,26 @@ ORDER BY revenue_rank
 
 
 SQL Queries:
+ 
+ for city:
+ ```sql
+SELECT city, round(avg(productquantity),2) as total_ordered
+FROM all_sessions
+where productquantity is not null
+group by city
+order by total_ordered desc
+```
+![Screenshot 2024-10-16 105257](https://github.com/user-attachments/assets/5dea57f1-d64b-4ded-ad32-466cb8ff1f75)
 
-
-
-Answer:
-
-
+for country:
+```sql
+SELECT country, round(avg(productquantity),2) as total_ordered
+FROM all_sessions
+where productquantity is not null
+group by country
+order by total_ordered desc
+```
+![Screenshot 2024-10-16 105331](https://github.com/user-attachments/assets/cf77030c-8fa1-472a-9c8b-15f090723839)
 
 
 
