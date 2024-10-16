@@ -7,7 +7,7 @@ Describe your QA process and include the SQL queries used to execute it.
 
 --------------------------------------------------------------
 
-make sure there are no duplicate 'sku'
+
 
 
 In cleaning_data.md I decided to delete the "name" and "stocklevel" columns in the "sales_by_sku" table as they were also present in the "products" table. I double checked the values for the "stocklevel" were the same across both tables by doing a full outer join as such.
